@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+section {
+    display: block;
+    height: 90vh;
+    overflow: hidden;
+}
+section:nth-child(1) {
+    padding-top: 10vh;
+    height: 90vh;
+}
+section:nth-child(2) {
+    background-image: url("../Bilder/contemporary_china.png");
+    background-repeat: repeat;
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+section:nth-child(3) {
+    background-image: url("../Bilder/congruent_outline.png");
+    background-repeat: repeat;
+    height: auto;
+    min-height: 90vh;
+}
+section:nth-child(4) {
+    background-image: url("../Bilder/asanoha.png");
+    background-repeat: repeat;
+    height: auto;
+}
+section:nth-child(5) {
+    background-image: url("../Bilder/triangular.png");
+    background-repeat: repeat;
+    height: auto;
+}
+section:nth-child(6) {
+    background: lightgrey;
+    height: auto;
+}
+section:nth-child(7) {
+    background-image: url("../Bilder/random_grey_variations.png");
+    background-repeat: repeat;
+    height: auto;
+}
+section h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+section p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#home a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    margin: auto;
+    margin-left: 20px;
+    position: relative;
+    color: #ccc;
+}
+nav span {
+    font-size: 200%;
+    color: white;
+    display: block;
+    padding: 0.5em;
+    float: left;
+    text-decoration: none;
+}
+.container > div {
+    float: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: calc(33% - 60px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 400px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: inset 0px 0px 0px 2px #000;
+    border-radius: 5px;
+}
+#button {
+    background: rgba(114, 114, 114, 0.59);
+    color: white;
+    font-family: Sans-serif;
+    height: auto;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    border: transparent 2px solid;
+    margin: 20vh auto 10vh;
+}
+#button h1 {
+    font-size: 100px !important;
+    margin-bottom: 0em;
+}
+#button h2 {
+    margin-top: 0em;
+}
+
+#textbox h1 {
+    color: #696969;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 20px 20px 20px 20px;
+}
+.first {
+    float: right;
+}
+.second {
+    float: left;
+}
+.readmore {
+    display: none;
+}
+.content-readmore {
+    opacity: 0;
+    max-height: 0%;
+    font-size: 0px;
+}
+.readmore:checked ~ .content-text .content-readmore {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 100%;
+}
+.readmore ~ .readmore1:before {
+    content: 'Read more';
+}
+.readmore:checked ~ .readmore1:before {
+    content: 'Hide';
+}
+
+.readmore1 {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+nav {
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    min-height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    display: block;
+    float: left;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+nav ul li a {
+    font-size: 150%;
+    color: #aaa;
+    display: block;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: white;
+}
+.parallax {
+    background-image: url("../Bilder/tomat.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+ul.menybar li.icon {
+    display: none;
+}
+article {
+    line-height: 200%;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article h1 {
+    font-size: 30px;
+}
+.ref {
+    text-decoration: none;
+    color: inherit;
+}
+#problem {
+    height: 100%;
+}
+.problemclass {
+    background: rgba(204, 204, 204, 0.40);
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+.problemclass h1 {
+    text-align: center;
+}
+
+.target {
+    width: 60%;
+    margin-left: 4em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    color: #fff;
+}
+.target p {
+    font-size: x-large;
+    line-height: 150%;
+}
+#solution {
+    text-align: center;
+}
+.solutionclass {
+    background: rgba(204, 204, 204, 0.40);
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+.solutionclass p {
+    text-align: justify;
+}
+.solutionclass h1 {
+    text-align: center;
+}
+#solution img {
+    height: 500px;
+    display: inline-element;
+}
+#accessibility {
+    height: 100%;
+}
+#divText {
+    width: calc(90% - 300px);
+    float: left;
+    margin-top: 40px;
+    margin-left: 2em;
+}
+#divBildeSetting {
+    float: right;
+    margin-right: 6%;
+    margin-top: 3%;
+    z-index: 999;
+}
+#divBildeSetting img {
+    width: 300px;
+}
+.howclass {
+    background: rgba(220, 220, 220, 0.85);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.howclass p {
+    text-align: justify;
+}
+.howclass h1 {
+    width: 8em;
+    padding: 1em;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.50);
+    border: 2px solid white;
+    color: #006600;
+}
+.referances {
+    background: rgba(220, 220, 220, 0.50);
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.referances a {
+    color: darkblue;
+}
+
+/* responsive begin */
+@media (max-width: 680px) {
+    div#textbox h1 {
+        font-size: 150%;
+    }
+}
+@media (max-width: 848px) {
+    .container > div {
+        width: auto;
+        margin-right: 20px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    section#solution img {
+        height: 275px;
+    }
+}
+@media screen and (max-width:848px) {
+    ul.menybar {
+        position: relative;
+    }
+    ul.menybar li.icon {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    ul.menybar li {
+        float: none;
+        display: inline;
+    }
+    ul.menybar li a {
+        display: block;
+        text-align: center;
+    }
+    nav span {
+        display: none;
+    }
+    nav ul {
+        float: none;
+    }
+    .content-readmore {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 100%;
+    }
+    .readmore, .readmore1 {
+        display: none;
+    }
+}
+@media screen and (max-width:848px) {
+    ul.menybar li:not(:first-child) {
+        display: none;
+    }
+    ul.menybar li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+@media screen and (max-width:848px) {
+    ul.menybar.responsiv {
+        position: relative;
+    }
+    ul.menybar.responsiv li.icon {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    ul.menybar.responsiv li {
+        float: none;
+        display: inline;
+    }
+    ul.menybar.responsiv li a {
+        display: block;
+        text-align: center;
+    }
+}
